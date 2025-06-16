@@ -1,0 +1,9 @@
+source leaprc.RNA.OL3
+loadamberprep 6MA.prep
+loadAmberParams 6MA.frcmod
+
+# Build a 15-mer all-m6A RNA (assuming the residue is named M6A in the lib)
+rna = sequence { 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6MA 6M>
+savepdb rna 15m6A.pdb
+saveamberparm rna 15m6A.prmtop 15m6A.inpcrd
+quit
